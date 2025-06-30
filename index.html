@@ -22,6 +22,31 @@
     </div>
   </div>
 
-  <script src="script.js"></script>
+  <script >
+    let player = {
+  name: "Remma",
+  chips: 200
+}
+let cards = []
+let sum = 0
+let hasBlackJack = false
+let isAlive = false
+let message = ""
+
+let messageEl = document.getElementById("message-el")
+let sumEl = document.getElementById("sum-el")
+let cardsEl = document.getElementById("cards-el")
+let playerEl = document.getElementById("player-el")
+
+playerEl.textContent = `${player.name}: $${player.chips}`
+
+// ✅ Random Card Function
+function getRandomCard() {
+  let random = Math.floor(Math.random() * 13) + 1
+  if (random > 10) return 10
+  if (random === 1) return 11
+  return random
+}
+  </script>
 </body>
 </html>
