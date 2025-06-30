@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Blackjack Game</title>
+</head>
+<body class="bg-green-800 text-white flex items-center justify-center min-h-screen">
+  <div class="text-center bg-[#064e3b] p-8 rounded-xl shadow-xl w-[350px] space-y-4">
+    <h1 class="text-3xl font-bold text-yellow-300">🃏 Blackjack Game</h1>
+
+    <p id="player-el" class="text-xl font-semibold"></p>
+
+    <p id="message-el" class="italic"></p>
+    <p id="cards-el" class="text-lg">Cards:</p>
+    <p id="sum-el" class="text-lg">Sum:</p>
+
+    <div class="space-x-4">
+      <button onclick="startGame()" class="bg-yellow-400 hover:bg-yellow-500 text-black font-bold px-4 py-2 rounded">Start Game</button>
+      <button onclick="newCard()" class="bg-yellow-400 hover:bg-yellow-500 text-black font-bold px-4 py-2 rounded">New Card</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
